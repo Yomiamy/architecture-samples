@@ -13,6 +13,14 @@ In this branch you'll find:
 *   A **data layer** with a repository and two data sources (local using Room and remote) that are queried with one-shot operations (no listeners or data streams).
 *   Two **product flavors**, `mock` and `prod`, [to ease development and testing](https://android-developers.googleblog.com/2015/12/leveraging-product-flavors-in-android.html) (except in the Dagger branch).
 *   A collection of unit, integration and e2e **tests**, including "shared" tests that can be run on emulator/device or Robolectric.
+*   **(New)** EventObserver and Event to avoid duplicate result of LiveData
+*   **(New)** LiveData as two-way binding usage
+*   **(New)** Sealed class to wrap Result status(Success/Error/Loading)
+*   **(New)** AppBarConfiguration to config the top-left icon for DrawerLayout
+*   **(New)** MenuHost of Fragment to config the OptionMenus of attached activity
+*   **(New)** Strikethrough change the text style of TextView
+*   **(New)** app:layoutManager attribute to config the LayoutManager of RecyclerView
+*   **(New)** Use the new attribute app:items constructored by BindingAdapter to assign data list to RecyclerView
 
 ## Variations
 
