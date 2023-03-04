@@ -22,6 +22,7 @@ import com.example.android.architecture.blueprints.todoapp.data.Result.Success
  * A generic class that holds a value with its loading status.
  * @param <T>
  */
+// TODO: 用於建立API或資料狀態
 sealed class Result<out R> {
 
     data class Success<out T>(val data: T) : Result<T>()

@@ -34,6 +34,7 @@ fun setItems(listView: RecyclerView, items: List<Task>?) {
 @BindingAdapter("app:completedTask")
 fun setStyle(textView: TextView, enabled: Boolean) {
     if (enabled) {
+        // TODO: strikethrough text style
         textView.paintFlags = textView.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
     } else {
         textView.paintFlags = textView.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()

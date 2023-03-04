@@ -34,6 +34,7 @@ class AddEditTaskViewModel(
     private val tasksRepository: TasksRepository
 ) : ViewModel() {
 
+    // TODO:用LiveData可以雙向binding
     // Two-way databinding, exposing MutableLiveData
     val title = MutableLiveData<String>()
 

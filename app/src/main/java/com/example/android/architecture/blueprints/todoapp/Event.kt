@@ -17,6 +17,7 @@ package com.example.android.architecture.blueprints.todoapp
 
 import androidx.lifecycle.Observer
 
+// TODO: 使用Event來Wrap內容, 並使用getContentIfNotHandled來避免View處理重複事件
 /**
  * Used as a wrapper for data that is exposed via a LiveData that represents an event.
  */
@@ -44,6 +45,7 @@ open class Event<out T>(private val content: T) {
     fun peekContent(): T = content
 }
 
+// TODO: 使用EventObserver來監聽Event事件變化
 /**
  * An [Observer] for [Event]s, simplifying the pattern of checking if the [Event]'s content has
  * already been handled.
