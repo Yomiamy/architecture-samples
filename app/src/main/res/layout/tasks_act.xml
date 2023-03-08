@@ -63,6 +63,7 @@
         app:headerLayout="@layout/nav_header"
         app:itemIconTint="@drawable/drawer_item_color"
         app:itemTextColor="@drawable/drawer_item_color"
-        app:menu="@menu/drawer_actions" />
+        app:menu="@menu/drawer_actions"
+        app:insetForeground="@color/colorPrimaryDark"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
