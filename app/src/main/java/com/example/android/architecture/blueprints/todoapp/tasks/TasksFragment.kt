@@ -60,7 +60,10 @@ class TasksFragment : Fragment() {
     ): View {
         viewDataBinding = TasksFragBinding.inflate(inflater, container, false).apply {
             viewmodel = viewModel
+            // Set the lifecycle owner to the lifecycle of the view
+            lifecycleOwner = viewLifecycleOwner
         }
+        // TODO:設定Fragment設置ActionBar的OptionMenu
         setHasOptionsMenu(true)
         return viewDataBinding.root
     }
@@ -89,8 +92,6 @@ class TasksFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Set the lifecycle owner to the lifecycle of the view
-        viewDataBinding.lifecycleOwner = this.viewLifecycleOwner
         setupSnackbar()
         setupListAdapter()
         setupRefreshLayout(viewDataBinding.refreshLayout, viewDataBinding.tasksList)
