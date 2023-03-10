@@ -88,6 +88,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 menuItem -> {
                     switch (menuItem.getItemId()) {
                         case R.id.list_navigation_menu_item:
+                            // TODO: 使用NavUtils.navigateUpFromSameTask以導覽新頁面方式finish當前頁面
                             NavUtils.navigateUpFromSameTask(StatisticsActivity.this);
                             break;
                         case R.id.statistics_navigation_menu_item:

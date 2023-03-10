@@ -27,6 +27,9 @@ import java.util.List;
 /**
  * This specifies the contract between the view and the presenter.
  */
+
+// TODO: MVP模式都以 xxxxContract 的Interface定義
+//       View與Presenter的delegate實作介面
 public interface TasksContract {
 
     interface View extends BaseView<Presenter> {

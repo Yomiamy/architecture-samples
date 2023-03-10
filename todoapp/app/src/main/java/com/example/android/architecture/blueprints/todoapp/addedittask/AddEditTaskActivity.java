@@ -51,8 +51,9 @@ public class AddEditTaskActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mActionBar = getSupportActionBar();
+        // TODO: 設定ActionBar左上角是否有Back顯示
         mActionBar.setDisplayHomeAsUpEnabled(true);
-        mActionBar.setDisplayShowHomeEnabled(true);
+//        mActionBar.setDisplayShowHomeEnabled(true);
 
         AddEditTaskFragment addEditTaskFragment =
                 (AddEditTaskFragment) getSupportFragmentManager().findFragmentById(R.id.contentFrame);

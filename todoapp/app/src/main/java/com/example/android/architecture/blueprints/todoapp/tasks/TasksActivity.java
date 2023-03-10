@@ -51,13 +51,17 @@ public class TasksActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar ab = getSupportActionBar();
+        // TODO:設定左上角Back位置的icon改為漢堡icon
         ab.setHomeAsUpIndicator(R.drawable.ic_menu);
+        // TODO: 設定ActionBar左上角是否有Back顯示
         ab.setDisplayHomeAsUpEnabled(true);
 
         // Set up the navigation drawer.
         mDrawerLayout = findViewById(R.id.drawer_layout);
+        // TODO:設定StatusBar(套用於當前activity)
         mDrawerLayout.setStatusBarBackground(R.color.colorPrimaryDark);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }

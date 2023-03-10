@@ -28,6 +28,7 @@ import com.example.android.architecture.blueprints.todoapp.util.schedulers.Sched
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+// TODO: 使用Injection提供Repository注入
 /**
  * Enables injection of mock implementations for
  * {@link TasksDataSource} at compile time. This is useful for testing, since it allows us to use
